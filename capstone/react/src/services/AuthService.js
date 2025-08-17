@@ -19,4 +19,12 @@ export default {
     return axios.get(`/users/${userId}`);
   },
 
+  saveJoke(joke){
+    return axios.post('/joke', joke);
+  }
+
+  // savePokemon(pokemon){
+  //   return axios.post('/pokemon', pokemon);
+  // }
+
 }

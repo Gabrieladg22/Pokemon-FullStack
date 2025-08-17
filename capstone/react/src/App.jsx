@@ -9,6 +9,9 @@ import RegisterView from './views/RegisterView/RegisterView';
 import UserProfileView from './views/UserProfileView/UserProfileView';
 import MainNav from './components/MainNav/MainNav';
 import ProtectedRoute from './components/ProtectedRoute';
+import JokePage from './views/JokePage';
+import PokemonPage from './views/PokemonPage/PokemonPage';
+import PokemonDetailPage from './views/PokemonDetailPage';
 
 import axios from 'axios';
 
@@ -61,6 +64,9 @@ export default function App() {
           <main id="main-content">
             <Routes>
               <Route path="/" element={<HomeView />} />
+              <Route path="/joke" element={<JokePage />} />
+              <Route path="/pokemon" element={<PokemonPage />} />
+              <Route path="/detail/:pokemonName" element={ <PokemonDetailPage />} />
               <Route path="/login" element={<LoginView onLogin={handleLogin} />} />
               <Route path="/logout" element={<LogoutView onLogout={handleLogout} />} />
               <Route path="/register" element={<RegisterView />} />

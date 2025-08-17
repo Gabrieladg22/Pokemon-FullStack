@@ -12,6 +12,16 @@ export default function MainNav() {
       </div>
       {user ? (
         <>
+        <div className="nav-link">
+            <NavLink to="/joke">
+              Joke
+            </NavLink>
+          </div>
+          <div className="nav-link">
+            <NavLink to="/pokemon">
+              Pokemon
+            </NavLink>
+          </div>
           <div className="nav-link">
             <NavLink to="/userProfile">
               Profile
